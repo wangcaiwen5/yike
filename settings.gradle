@@ -1,0 +1,1 @@
+include ':app', ':common_module', ':common_login', ':common_home', ':common_knowledge', ':common_find', ':common_mine', ':arouter', ':annotations', ':annotation_complier'

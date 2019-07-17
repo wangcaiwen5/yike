@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#2878F1</color>
+    <color name="colorAccent">#EF5362</color>
+    <!-- 主要色值-->
+    <color name="_2878F1">#2878F1</color>
+    <color name="color_gray">#9a9a9a</color>
+
+    <color name="color_gray_translucent">#5000</color>
+
+
+    <color name="app_color_theme_1">#EF5362</color> <!-- Grapefruit -->
+    <color name="app_color_theme_2">#FE6D4B</color> <!-- Bittersweet -->
+    <color name="app_color_theme_3">#FFCF47</color> <!-- Sunflower -->
+    <color name="app_color_theme_4">#9FD661</color> <!-- Grass -->
+    <color name="app_color_theme_5">#3FD0AD</color> <!-- Mint -->
+    <color name="app_color_theme_6">#2BBDF3</color> <!-- Aqua -->
+    <color name="app_color_theme_7">#00b0ff</color> <!-- Blue Jeans -->
+    <color name="app_color_theme_8">#AC8FEF</color> <!-- Lavender -->
+    <color name="app_color_theme_9">#EE85C1</color> <!-- Pink Rose -->
+
+    <color name="color_pink">#ff4081</color>
+    <color name="color_orange">#dd2c00</color>
+    <color name="color_blue_dark">#ee447AA4</color>
+
+
+
+
+    <!-- title 半透明背景颜色 -->
+    <color name="color_title_bg">#CCFFFFFF</color>
+    <!-- 默认背景色 -->
+    <color name="backgroundColor">#EEEEEE</color>
+
+    <!-- white -->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+
+    <color name="color_blue">#87CEEB</color>
+
+    <!-- item 标题颜色 -->
+    <color name="color_item_title">#000000</color>
+
+    <color name="color_lighter_gray">#ddd</color>
+    <color name="color_darker_gray">#aaa</color>
+
+    <color name="color_division_line">@color/color_lighter_gray</color>
+
+    <color name="color_translucent">#00000000</color>
+
+    <color name="color_aquamarine">#7FFFD4</color>
+
+    <color name="color_light_black">#5000</color>
+
+
+    <!--字体颜色-->
+    <color name="color_1e1e1e">#1e1e1e</color>
+    <color name="color_661e1e1e">#BB1e1e1e</color>
+    <color name="color_424542">#424542</color>
+    <color name="color_8C8A8C">#8C8A8C</color>
+
+
+    <color name="common_bg">#f5f5f5</color>
+    <color name="common_black">#000000</color>
+    <color name="common_blue">#03a9f4</color>
+    <color name="common_blue_dark">#0288d1</color>
+    <color name="common_blue_light">#039be5</color>
+    <color name="common_disable">#BBBBBB</color>
+    <color name="common_divider">#d4d4d4</color>
+    <color name="common_gray">#dddddd</color>
+    <color name="common_purple">#d500f9</color>
+    <color name="common_red">#f11919</color>
+    <color name="common_white">#ffffff</color>
+    <color name="common_yellow">#fe9c2f</color>
+
+    <color name="text_dark">#999999</color>
+    <color name="text_light_dark">#333333</color>
+    <color name="text_normal">#666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_bfbfbf">#BFBFBF</color>
+    <color name="stfImageColor">@color/colorPrimary</color>
+
+    <!--fragment背景-->
+    <color name="fragment_background">#EEEEEE</color>
+    <color name="color_translucent_white">#88FFFFFF</color>
+
+    <!--空布局 灰色-->
+    <color name="gray_cdcdcd">#CDCDCD</color>
+    <color name="gray_bfbfbf">#BFBFBF</color>
+
+    <!--Snackbar 颜色-->
+    <color name="snackbar_blue">#2195f3</color>
+    <color name="snackbar_green">#4caf50</color>
+    <color name="snackbar_origin">#ffc107</color>
+    <color name="snackbar_red">#f44336</color>
+
+    <!--分割线灰色-->
+    <color name="color_dadada">#dadada</color>
+    <!--灰色字体-->
+    <color name="color_949494">#949494</color>
+    <color name="color_header">#6F6F6F</color>
+
+    <color name="comment_reply">#9ba4a3</color>
+
+
+</resources>

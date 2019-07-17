@@ -1,0 +1,35 @@
+https://www.wanandroid.com/user/login
+
+方法：POST
+参数：
+	username，password
+
+登录后会在cookie中返回账号密码，只要在客户端做cookie持久化存储即可自动登录验证。
+
+
+1.首页相关
+1.1 首页文章列表
+
+https://www.wanandroid.com/article/list/0/json
+
+方法：GET
+参数：页码，拼接在连接中，从0开始。
+
+可直接点击查看示例：https://www.wanandroid.com/article/list/1/json。
+
+注意：页码从0开始，拼接在链接上。
+
+其中有两个易混淆的字段:
+
+"superChapterId": 153,
+"superChapterName": "framework", // 一级分类的名称
+
+superChapterId其实不是一级分类id，因为要拼接跳转url，内容实际都挂在二级分类下，所以该id实际上是一级分类的第一个子类目的id，拼接后故可正常跳转。
+1.2 首页banner
+
+https://www.wanandroid.com/banner/json
+
+方法：GET
+参数：无
+
+可直接点击查看示例：https://www.wanandroid.com/banner/json

@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //ARouter
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.dependencies.multidex
+    kapt rootProject.ext.dependencies.arouter_compiler
+    debugImplementation rootProject.ext.dependencies.leakcanaryDebug
+    releaseImplementation rootProject.ext.dependencies.leakcanaryRelease
+    debugImplementation rootProject.ext.dependencies.leakcanaryFragmentDebug
+    implementation project(path: ':arouter')
+    implementation project(path: ':annotations')
+    //annotationProcessor  这里必须使用annotationProcessor  告诉系统这是一个注解处理器
+    kapt  project(path: ':annotation_complier')
+    /*  debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+      releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+      // Optional, if you use support library fragments:
+      debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.3'*/
+    if (!isModule.toBoolean()) {
+        implementation project(':common_module')
+        implementation project(':common_login')
+        implementation project(':common_home')
+        implementation project(':common_knowledge')
+        implementation project(':common_find')
+        implementation project(':common_mine')
+    }
+}

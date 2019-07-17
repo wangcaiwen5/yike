@@ -1,0 +1,10 @@
+package debug
+
+import com.yike.common_module.base.BaseApplication
+
+/**
+ * Author：wangcaiwen
+ * Date：2019/3/14
+ * Description：
+ */
+class LoginApplication : BaseApplication()
